@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_app_menu.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_category_list.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_clubs_list.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_edit_profile.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_favorites_list.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_leagues_list.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_login.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_main.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_moderator_list.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_profile.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_sports_list.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_user_profile.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_video_details.xml" value="0.33" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_view_ads_web_view.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/activity_view_all_comments.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/fav_clubs.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/fav_leagues.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/fav_moderators.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/fav_sports.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/item_row_favorites.xml" value="0.3359375" />
+        <entry key="..\:/A-04-10-2021/Fanliga-Mobile-App/K.T/Fanliga/Fanliga/FanLigaProject/app/src/main/res/layout/item_row_moderators.xml" value="0.3359375" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_clubs_list.xml" value="0.4466666666666667" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_edit_profile.xml" value="0.1693840579710145" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_favorites_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_leagues_list.xml" value="0.367561260210035" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_moderator_list.xml" value="0.1796875" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_sports_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_video_details.xml" value="0.15307971014492755" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/activity_video_grid_list.xml" value="0.1796875" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/frag_video_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Project/FanLigaProject/app/src/main/res/layout/item_row_leagues.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

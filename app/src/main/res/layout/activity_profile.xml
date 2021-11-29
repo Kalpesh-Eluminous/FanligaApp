@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        tools:context=".activities.ProfileActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.50dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/app_bar_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_app_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/ic_settings_menu" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_favorite" />
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_news" />
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_my_news" />
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_teams" />
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_league" />
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_moderation" />
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_app_menu" />
+
+                    <ImageView
+                        android:layout_width="32.5dp"
+                        android:layout_height="32.5dp"
+                        android:layout_marginLeft="12.50dp"
+                        android:layout_marginRight="12.50dp"
+                        android:src="@drawable/ic_search" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingStart="12.50dp"
+                    android:paddingEnd="12.50dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="35.5dp"
+                        android:layout_height="35.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="12.50dp"
+                        android:src="@drawable/ic_person"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:id="@+id/tvProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Max Mustermann"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/ivProfile"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/ivClose"
+                        android:layout_width="35.5dp"
+                        android:layout_height="35.5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="12.50dp"
+                        android:src="@drawable/ic_close" />
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:paddingStart="12.50dp"
+                android:paddingEnd="12.50dp">
+
+                <com.fanliga.fonts.ProximaRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Profile"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ORT"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:textAlignment="center"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        app:cardCornerRadius="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryLight"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <com.fanliga.fonts.ProximaRegularTextView
+                                android:id="@+id/tvPlace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:text="Linz-Urfahr"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:layout_margin="2dp"
+                                android:padding="2dp"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALTER"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:textAlignment="center"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        app:cardCornerRadius="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryLight"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <com.fanliga.fonts.ProximaRegularTextView
+                                android:id="@+id/tvAge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="35"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:layout_margin="2dp"
+                                android:padding="2dp"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llHometownClub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Heimatverein"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:textAlignment="center"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        app:cardCornerRadius="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryLight"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <com.fanliga.fonts.ProximaRegularTextView
+                                android:id="@+id/tvHomeTownClub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="FC Blau Weiss Linz"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:layout_margin="2dp"
+                                android:padding="2dp"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llActiveSportsClub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPORTAKTIV"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:textAlignment="center"/>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        app:cardCornerRadius="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryLight"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+
+                            <com.fanliga.fonts.ProximaRegularTextView
+                                android:id="@+id/tvActiveSportClub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Fussball  Walken"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:layout_margin="2dp"
+                                android:padding="2dp"/>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                
+            </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="12.50dp"
+                    android:paddingEnd="12.50dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="KATEGORIE"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="SPORT"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_sport_catagory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12.50dp"
+                        android:orientation="horizontal"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="12.50dp"
+                    android:paddingEnd="12.50dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="LIGA"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_leagues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12.50dp"
+                        android:orientation="horizontal"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="12.50dp"
+                    android:paddingEnd="12.50dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="VEREIN"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_verien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12.50dp"
+                        android:orientation="horizontal"
+                        />
+
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="12.50dp"
+                    android:paddingEnd="12.50dp">
+
+                    <com.fanliga.fonts.ProximaRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="MODERATION"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_moderation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12.50dp"
+                        android:orientation="horizontal"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_add_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="05dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_add_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_margin="12.50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/app_bar_logo" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

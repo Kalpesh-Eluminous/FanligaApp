@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fan Liga</string>
+
+    <string name="signup">Don\'t have an account ? <u><font color='#e21412'>Register Now</font></u></string>
+</resources>

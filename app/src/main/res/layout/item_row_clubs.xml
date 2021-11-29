@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_main_comments_row"
+        android:layout_margin="5dp">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:cardCornerRadius="5dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:gravity="center">
+
+          <RelativeLayout
+              android:id="@+id/rlSportsRow"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+              android:layout_toStartOf="@+id/ivBookmark"
+              android:layout_marginStart="10dp">
+              <com.fanliga.fonts.ProximaRegularTextView
+                  android:id="@+id/tvClubs"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:text="Linz-Urfahr"
+                  android:textColor="@color/black"
+                  android:textSize="18sp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerInParent="true"
+                  android:layout_marginStart="10dp"/>
+          </RelativeLayout>
+
+              <ImageView
+                  android:id="@+id/ivBookmark"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerInParent="true"
+                  android:layout_marginEnd="10dp"/>
+
+
+          </RelativeLayout>
+
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>
